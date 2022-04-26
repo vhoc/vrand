@@ -37,3 +37,10 @@ vrand( 165, inner, 'img_login@3x.png' )
 vrand( 110, inner, 'img_login@2x.png' )
 vrand( 55, inner, 'img_login@1x.png' )
 vrand( 55, inner, 'img_login.svg' )
+
+/**
+ * Location:
+ *  /var/www/backend/Westtelco-zoom-back/Templates/Images/
+ */
+const backend = '/var/www/backend/Westtelco-zoom-back/Templates/Images/'
+vrand( 17, backend, 'img_wt.svg' )
