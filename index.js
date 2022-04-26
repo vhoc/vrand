@@ -12,10 +12,18 @@ const vrand = ( height, path, filename ) => {
 }
 
 /**
+ * CONFIGURATION
+ * of the backend and frontend's locations
+ */
+const basePathFrontend = '/var/www/frontend/'
+const basePathBackend = '/var/www/backend/'
+
+/**
  * Location:
  *  /var/www/frontend/src/assets/img/
  */
-const path = '/var/www/frontend/src/assets/img/'
+
+const path = `${ basePathFrontend }src/assets/img`
 vrand( 159, path, 'img_login@3x.png' )
 vrand( 106, path, 'img_login@2x.png' )
 vrand( 53, path, 'img_login.png' )
@@ -27,7 +35,7 @@ vrand( 25, path, 'logo.png' )
  * Location:
  *  /var/www/frontend/src/assets/img/official/
  */
-const inner = '/var/www/frontend/src/assets/img/official/'
+const inner = `${ basePathFrontend }src/assets/img/official`
 vrand( 72, inner, 'img_header@3x.png' )
 vrand( 48, inner, 'img_header@2x.png' )
 vrand( 24, inner, 'img_header@1x.png' )
@@ -42,5 +50,5 @@ vrand( 55, inner, 'img_login.svg' )
  * Location:
  *  /var/www/backend/Westtelco-zoom-back/Templates/Images/
  */
-const backend = '/var/www/backend/Westtelco-zoom-back/Templates/Images/'
+const backend = `${ basePathBackend }Westtelco-zoom-back/Templates/Images/`
 vrand( 17, backend, 'img_wt.svg' )
